@@ -9,7 +9,7 @@ export default component$(() => {
   return (
     <>
       <Navbar />
-      <main>
+      <main class="flex justify-center items-center flex-col">
         <Slot />
       </main>      
     </>

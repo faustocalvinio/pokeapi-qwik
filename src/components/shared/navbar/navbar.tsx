@@ -14,7 +14,7 @@ export default component$(() => {
         </div>
         <ul>
           <li>
-            <Link class="text-2xl" href="/pokemons/list-ssr/">List - SSR</Link>           
+            <Link class="text-2xl" href="/pokemons/list-ssr/?offset=0">List - SSR</Link>           
           </li>
           <li>
             <Link class="text-2xl" href="/pokemons/list-client/">List - client</Link>
