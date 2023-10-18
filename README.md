@@ -1,6 +1,6 @@
-# Qwik City App ⚡️
+# PokeApi Qwik App ⚡️
 
-- [Qwik Docs](https://qwik.builder.io/)
+- [Quick Overview](#quick-overview)
 - [Discord](https://qwik.builder.io/chat)
 - [Qwik GitHub](https://github.com/BuilderIO/qwik)
 - [@QwikDev](https://twitter.com/QwikDev)
@@ -8,7 +8,10 @@
 
 ---
 
-## Project Structure
+## :information_source: Quick Overview
+
+Project created while doing [QWIK Introduction Course](https://cursos.devtalles.com/courses/qwik-introduccion).
+
 
 This project is using Qwik with [QwikCity](https://qwik.builder.io/qwikcity/overview/). QwikCity is just an extra set of tools on top of Qwik to make it easier to build a full site, including directory-based routing, layouts, and more.
 
