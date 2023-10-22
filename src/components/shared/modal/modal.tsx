@@ -4,10 +4,13 @@ import ModalStyles from './modal.css?inline';
 
 interface Props {
     showModal: boolean;
-    closeFn: PropFunction< () => void >
+    persistent:boolean,
+    size: 'sm' | 'md' | 'lg',
+
+    closeFn: PropFunction< () => void >;
 }
 
-export const Modal = component$( ({showModal, closeFn}:Props) => {
+export const Modal = component$( ({showModal, closeFn,persistent=false,size="md"}:Props) => {
 
     useStylesScoped$(ModalStyles);
 
@@ -20,12 +23,12 @@ export const Modal = component$( ({showModal, closeFn}:Props) => {
             id='modal-content'
             onClick$={(e)=>{
                 const elementID = (e.target as HTMLDivElement).id
-                if (elementID === 'modal-content') closeFn();
+                if (elementID === 'modal-content' && !persistent ) closeFn();
                 // closeFn();
             }}           
         
         >
-            <div class="modal-content">                
+            <div class={`modal-content modal-${size}`}>                
                 <div class="mt-3 text-center">                    
                     <h3 class="modal-title px-4">
                         <Slot name="title" />                     
