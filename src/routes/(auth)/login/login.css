@@ -9,9 +9,11 @@ label {
 button {
     @apply bg-purple-500 text-white rounded-md px-2 py-1 w-full hover:bg-purple-700 transition-all;
 }
-
+button:disabled{
+    @apply bg-black
+}
 code {
-    @apply block whitespace-pre overflow-scroll text-sm w-80;
+    @apply block whitespace-pre overflow-hidden text-sm w-80;
 }
 
 .login-form {
